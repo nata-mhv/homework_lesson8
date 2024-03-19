@@ -22,7 +22,7 @@ class Product:
         if self.check_quantity(quantity):
             self.quantity -= quantity
         else:
-            raise ValueError["Not enough product"]
+            raise ValueError("Not enough product")
         #реализуйте метод покупки. Проверьте количество продукта используя метод check_quantity
         # Если продуктов не хватает, то выбросите исключение ValueError
 
@@ -68,7 +68,7 @@ class Cart:
     def buy(self):
         for product, quantity in self.products.items():
             if product.quantity < quantity:
-                raise ValueError["Product not enough"]
+                raise ValueError("Product not enough")
             else:
                 product.buy(quantity)
         #Метод покупки.

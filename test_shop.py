@@ -30,7 +30,7 @@ class TestCart:
         assert len(cart.products) == 1
 
         cart.add_product(product, buy_count=5)
-        assert len(cart.products) == 6
+        assert len(cart.products) == 1
 
 
     def test_remove_product(self, cart, product):
